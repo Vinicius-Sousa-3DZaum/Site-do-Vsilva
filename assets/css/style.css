@@ -1,0 +1,115 @@
+:root {
+    --cor-de-ciminha:rgb(72, 0, 143);
+    --cor-back: #000;
+}
+
+@font-face {
+    font-family: 'Fonte-grafite';
+    src: url(fonte/adrip1.ttf);
+}
+
+header a img {
+    width: 125px;
+    margin-top: 4px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+body, ul, li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 2rem;
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: 'Fonte-grafite';
+    color: #fff;
+}
+
+.container {
+    background-color: var(--cor-de-ciminha);
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu {
+    display: flex;
+    margin-right: 10px;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    padding: 10px;
+}
+
+html {
+    background-color: var(--cor-back);
+}
+
+body #central {
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    grid-template-rows: 11ch auto minmax(10px, 60px);
+}
+
+.video1{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-left: 20px;
+}
+
+.começo {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    border: 8px double var(--cor-de-ciminha);
+    border-top-right-radius: 95px;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 95px;
+    border-bottom-right-radius: 24px;
+}
+
+#margin-p {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 26.560px;
+}
+
+#game {
+    transition: .5s;
+}
+.pulo:hover #game{
+    transform: scale(1.05) translateY(-10px);
+}
+
+#video{
+    border: 8px double var(--cor-de-ciminha);
+}
